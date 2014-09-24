@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    include ./_partial/head
+  body
+    .add-url-box
+      .container
+        form(id="", method="POST", action="/add_url")
+          p
+            label url：
+            input(name="url")
+          div
+            label 数据：
+            div(contenteditable=true)
+
+          input(type="submit")
