@@ -2,10 +2,11 @@
   "name": "node-test-server",
   "main": "server.js",
   "dependencies": {
-    "express": "~4.0.0",
-    "mongoose": "~3.6.13",
     "body-parser": "~1.0.1",
+    "express": "~4.0.0",
     "jade": "~1.5.0",
+    "marked": "^0.3.2",
+    "mongoose": "~3.6.13",
     "underscore": "~1.7.0"
   },
   "version": "0.0.0",
@@ -19,5 +20,13 @@
     "server"
   ],
   "author": "boiawang",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-coffee-jshint": "^0.2.1",
+    "grunt-contrib-coffee": "^0.11.1",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-styl": "^1.0.2"
+  }
 }

@@ -1,0 +1,6 @@
+{
+  "debug": true,
+  "db": "mongodb://127.0.0.1:27017/gez-cloud",
+  "name": "mongoose",
+  "email": "zhengwang2314@gmail.com"
+}

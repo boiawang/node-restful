@@ -4,13 +4,18 @@ html
     include ./_partial/head
   body
     .add-url-box
-      .container
-        form(id="", method="POST", action="/add_url")
-          p
+      .container.pt50
+        form(id="", method="POST", action="/add_url" role="form")
+          .form-group
+            label name:
+            input.form-control(name="name" class="name" placeholder="请输入name 全英文")
+          .form-group
             label url：
-            input(name="url")
-          div
-            label 数据：
-            div(contenteditable=true)
+            .input-group
+              i.glyphicon.glyphicon-hand-right.input-group-addon
+              input.form-control(name="url" class="url" placeholder="请输入url")
+          .form-group
+            label data:
+            textarea.form-control(rows="20" name="data")
 
-          input(type="submit")
+          input.btn.btn-primary(type="submit")
